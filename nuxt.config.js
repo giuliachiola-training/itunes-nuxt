@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -11,7 +13,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' }
     ]
   },
   /*
@@ -22,11 +25,12 @@ module.exports = {
   css: ['~assets/app.scss'],
 
   loading: { color: '#3B8070' },
+  presets: ['vue-app'],
   /*
   ** Build configuration
   */
   build: {
-    vendor: ['axios', 'vuetify'],
+    vendor: ['axios', 'vuetify', 'babel-polyfill', 'eventsource-polyfill'],
     /*
     ** Run ESLint on save
     */
@@ -41,6 +45,23 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }*/
+    }
+  },
+
+  generate: {
+    routes: [
+      '/results/taylor%20swift',
+      '/results/queens',
+      '/results/davidguetta'
+    ],
+    routes: function () {
+      let artist = 'queens' // STATICO
+      return axios.get(`https://itunes.apple.com/search?term=${artist}&entity=album`)
+        .then((res) => {
+          return res.data.results.map((artist) => {
+            return '/results/' + artist.artistName
+          })
+        })
     }
   }
 }

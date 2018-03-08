@@ -49,7 +49,6 @@
       </div>
 
     </form>
-    <v-btn @click="filteredSearch" class="search-movie">Search movie</v-btn>
 
     <h4>Esempi da provare:</h4>
     <table>
@@ -144,12 +143,6 @@ h1 {
   border: 1px solid lavenderblush;
 }
 
-.search-movie {
-  background: lightcoral;
-  color: whitesmoke;
-  margin-bottom: 5rem;
-}
-
 .is-hidden {
   display: none;
 }
@@ -161,6 +154,7 @@ table {
     border: 1px solid lavenderblush;
     text-align: left;
     width: 200px;
+    padding: 10px;
   }
 }
 </style>
