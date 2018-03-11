@@ -7,6 +7,7 @@
       <li class="c-toolbar__item"><nuxt-link to="/">Starting page</nuxt-link></li>
       <li class="c-toolbar__item"><nuxt-link to="/about">About</nuxt-link></li>
       <li class="c-toolbar__item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+      <li class="c-toolbar__item"><nuxt-link to="/other">Other</nuxt-link></li>
     </ul>
   </v-toolbar>
 </template>

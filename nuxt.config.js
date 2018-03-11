@@ -51,11 +51,11 @@ module.exports = {
   generate: {
     routes: [
       '/results/taylor%20swift',
-      '/results/queens',
+      '/results/queen',
       '/results/davidguetta'
     ],
     routes: function () {
-      let artist = 'queens' // STATICO
+      let artist = 'queen' // STATICO
       return axios.get(`https://itunes.apple.com/search?term=${artist}&entity=album`)
         .then((res) => {
           return res.data.results.map((artist) => {

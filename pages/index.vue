@@ -52,11 +52,13 @@
 
     <h4>Esempi da provare:</h4>
     <table>
-      <tr v-for="example in examples" :key="example.title">
-        <td>{{ example.country }}</td>
-        <td>{{ example.genre }}</td>
-        <td>{{ example.title }}</td>
-      </tr>
+        <tbody>
+        <tr v-for="example in examples" :key="example.title">
+          <td>{{ example.country }}</td>
+          <td>{{ example.genre }}</td>
+          <td>{{ example.title }}</td>
+        </tr>
+      </tbody>
     </table>
 
   </div>
