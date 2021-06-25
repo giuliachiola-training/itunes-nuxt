@@ -1,3 +1,6 @@
+# 📒 Project from tutorial 
+https://www.youtube.com/watch?v=vVVgB5fZJy0&ab_channel=ProgramWithErik
+
 # itunes-nuxt
 
 > Nuxt.js project
