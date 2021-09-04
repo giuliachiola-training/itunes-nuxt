@@ -8,7 +8,8 @@ iTunes app clone using NuxtJS. Build a Server Side Nuxt.js App With Vuetify, Axi
 | Deploy preview                                                            | /                                                                                                       |
 | Project typology                                                          | 📒  Step by step from tutorial [Build a Server Side Nuxt.js App With Vuetify, Axios - Program With Erik ](https://www.youtube.com/watch?v=vVVgB5fZJy0&ab_channel=ProgramWithErik) |                                                                                                         |
 
-![project preview](docs/project-preview.mp4)
+![project preview 1](docs/project-preview-1.png)
+![project preview 2](docs/project-preview-2.png)
 
 ## 🔥 Tech stack
 
